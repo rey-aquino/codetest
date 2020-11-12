@@ -196,21 +196,21 @@ class BookingController extends Controller
     {
         $data = $request->all();
 
-        if (isset($data['distance']) && $data['distance'] != "") {
+        if (isset($data['distance']) != "") {
             $distance = $data['distance'];
         } else {
             $distance = "";
         }
-        if (isset($data['time']) && $data['time'] != "") {
+        if (isset($data['time']) != "") {
             $time = $data['time'];
         } else {
             $time = "";
         }
-        if (isset($data['jobid']) && $data['jobid'] != "") {
+        if (isset($data['jobid']) != "") {
             $jobid = $data['jobid'];
         }
 
-        if (isset($data['session_time']) && $data['session_time'] != "") {
+        if (isset($data['session_time']) != "") {
             $session = $data['session_time'];
         } else {
             $session = "";
@@ -235,7 +235,7 @@ class BookingController extends Controller
             $by_admin = 'no';
         }
 
-        if (isset($data['admincomment']) && $data['admincomment'] != "") {
+        if (isset($data['admincomment']) != "") {
             $admincomment = $data['admincomment'];
         } else {
             $admincomment = "";
